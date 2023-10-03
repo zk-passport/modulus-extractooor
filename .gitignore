@@ -2,3 +2,4 @@ scan.json
 certificates/
 icaopkd-001-dsccrl-006901.ldif
 all_modulus.txt
+modulus
