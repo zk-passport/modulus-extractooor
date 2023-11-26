@@ -2,17 +2,28 @@
 
 This script takes a [ICAO DSC & CRL list](https://download.pkd.icao.int/) in ldif format and extracts the public keys that country authorities use to sign passports.
 
-To run:
+Install
 ```
-node extract.js
+yarn
 ```
 
-The pubkeys are extracted as modulus only because the exponent is always 65537
+Extract certificates from ldif file:
+```
+ts-node src/extract_certificates.ts
+```
+
+Extract public keys:
+```
+ts-node src/extract_pubkeys.ts
+```
+
+Visualize the signature algorithms of each countries, run:
+```
+ts-node src/extract_sig_algs.ts
+```
 
 More info: [ICAO website](https://www.icao.int/Security/FAL/PKD/Pages/icao-master-list.aspx)
 
-```extract.js``` extracts the modulus to all_modulus.json
+`publicKeysParsed.json` contains all the public keys
 
-```scan_certifs.js``` sorts the certificates by country
-
-`scan.json` contains the signature algorithms used by each country authority
+`signature_algorithms.json` contains the signature algorithms used by each country authority
