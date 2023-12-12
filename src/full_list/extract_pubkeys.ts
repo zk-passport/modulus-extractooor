@@ -3,8 +3,8 @@ import util from 'util';
 const execAsync = util.promisify(exec);
 const fs = require('fs');
 
-// Loop through each certificate file and extract the modulus
-const numCertificates = 19723; // Number of certificates you have
+// Count the number of files in certificates/
+const numCertificates = fs.readdirSync('certificates/').length;
 const concurrencyLimit = 500; // Number of tasks to run at once
 
 const publicKeysParsed: {

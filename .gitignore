@@ -1,3 +1,4 @@
-certificates/
-input/
+certificates
+input
 node_modules/
+csca_certificates

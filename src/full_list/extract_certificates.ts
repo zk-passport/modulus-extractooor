@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // extract certificates from ldif file
-const fileContent = fs.readFileSync("input/icaopkd-001-dsccrl.ldif", "utf-8");
+const fileContent = fs.readFileSync("input/icao_download_section/icaopkd-001-complete-007117.ldif", "utf-8");
 const regex = /userCertificate;binary::\s*([\s\S]*?)(?=\w+:|\n\n|$)/g;
 let match: RegExpExecArray | null;
 
