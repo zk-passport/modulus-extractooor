@@ -1,3 +1,5 @@
+**⚠️ Moved to [proof-of-passport/registry](https://github.com/zk-passport/proof-of-passport/blob/merkle-tree/registry) ⚠️**
+
 # modulus-extractooor
 
 This script takes a [ICAO DSC & CRL list](https://download.pkd.icao.int/) in ldif format and extracts the public keys that country authorities use to sign passports.
