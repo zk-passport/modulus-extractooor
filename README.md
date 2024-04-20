@@ -1,4 +1,4 @@
-**⚠️ Moved to [proof-of-passport/registry](https://github.com/zk-passport/proof-of-passport/blob/merkle-tree/registry) ⚠️**
+**⚠️ Moved to [proof-of-passport/registry](https://github.com/zk-passport/proof-of-passport/blob/main/registry) ⚠️**
 
 # modulus-extractooor
 
